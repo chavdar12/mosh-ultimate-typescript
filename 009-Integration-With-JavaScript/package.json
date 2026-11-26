@@ -1,0 +1,18 @@
+{
+  "name": "integration-with-javascript",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && mkdir -p dist/vendor && cp vendor/shipping.js dist/vendor/",
+    "test": "npm run build && node --test \"dist/**/*.test.js\""
+  },
+  "dependencies": {
+    "lodash": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.27",
+    "@types/node": "^24.0.0",
+    "typescript": "~6.0.2"
+  }
+}

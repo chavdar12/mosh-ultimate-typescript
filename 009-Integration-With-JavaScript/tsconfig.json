@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "types": ["node"],
+    "strict": true,
+    // lesson: including JS code in a TS project, and type checking it (JSDoc types count)
+    "allowJs": true,
+    "checkJs": true,
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  // vendor JS is typed by its .d.ts instead of being compiled; the build copies it to dist
+  "exclude": ["dist", "node_modules", "vendor/*.js"]
+}

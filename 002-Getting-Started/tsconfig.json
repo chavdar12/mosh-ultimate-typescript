@@ -1,0 +1,16 @@
+{
+  // Lesson: configuring the compiler (tsc --init, then these options)
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "types": ["node"],
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true, // lets the debugger map dist/*.js back to the .ts (lesson: debugging)
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strict": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["dist", "node_modules"]
+}

@@ -1,0 +1,12 @@
+.github/
+*.yml
+*.yaml
+node_modules/
+dist/
+build/
+coverage/
+.angular/
+package-lock.json
+*.min.*
+*.md
+**/seed/**
